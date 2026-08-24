@@ -7,10 +7,18 @@ const logger = require('../utils/logger');
  * definition (see config/services.js).
  */
 function buildServiceProxy(service) {
+  // The proxy layer receives req.url already stripped of the router mounts
+  // (e.g. '/login' for GET /api/v1/auth/login). Downstream services expose
+  // their routes under the full public path ('/api/v1/auth/...'), so the
+  // service's registry prefix is re-prepended here.
+  const mountRoot = service.prefix.startsWith('/api/v1')
+    ? service.prefix
+    : `/api/v1${service.prefix}`;
+
   return createProxyMiddleware({
     target: service.target,
     changeOrigin: true,
-    pathRewrite: service.pathRewrite,
+    pathRewrite: { '^/': `${mountRoot}/` },
     timeout: config.proxyTimeoutMs,
     proxyTimeout: config.proxyTimeoutMs,
     logger: {
