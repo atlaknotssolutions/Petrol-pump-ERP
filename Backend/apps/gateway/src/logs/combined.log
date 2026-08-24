@@ -1,0 +1,19 @@
+[2026-08-24 17:01:52] info: Mounted auth-service at /api/v1/auth -> http://localhost:8001
+[2026-08-24 17:01:52] info: Mounted auth-service-users at /api/v1/users -> http://localhost:8002
+[2026-08-24 17:01:52] info: Mounted branch-service at /api/v1/branches -> http://localhost:8003
+[2026-08-24 17:01:52] info: Mounted inventory-service at /api/v1/inventory -> http://localhost:8004
+[2026-08-24 17:01:52] info: Mounted sales-service at /api/v1/sales -> http://localhost:8005
+[2026-08-24 17:01:52] info: Mounted purchase-service at /api/v1/purchases -> http://localhost:8006
+[2026-08-24 17:01:52] info: Mounted analytics-service at /api/v1/analytics -> http://localhost:3006
+[2026-08-24 17:01:52] info: Mounted notification-service at /api/v1/notifications -> http://localhost:3007
+[2026-08-24 17:01:52] info: gateway running in development mode on port 3000
+[2026-08-24 17:06:20] info: SIGINT received. Shutting down gracefully...
+[2026-08-24 17:06:23] info: Mounted auth-service at /api/v1/auth -> http://localhost:8001
+[2026-08-24 17:06:23] info: Mounted auth-service-users at /api/v1/users -> http://localhost:8001
+[2026-08-24 17:06:23] info: Mounted branch-service at /api/v1/branches -> http://localhost: 8002
+[2026-08-24 17:06:23] info: Mounted inventory-service at /api/v1/inventory -> http://localhost:8003
+[2026-08-24 17:06:23] info: Mounted sales-service at /api/v1/sales -> http://localhost:8004
+[2026-08-24 17:06:23] info: Mounted purchase-service at /api/v1/purchases -> http://localhost: 8005
+[2026-08-24 17:06:23] info: Mounted analytics-service at /api/v1/analytics -> http://localhost:8006
+[2026-08-24 17:06:23] info: Mounted notification-service at /api/v1/notifications -> http://localhost:8007
+[2026-08-24 17:06:23] info: gateway running in development mode on port 3000

@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const config = require("./index");
 const logger = require("../utils/logger");
+const dns = require("node:dns");
 
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const connectionOptions = {
   serverSelectionTimeoutMS: 5000,
   connectTimeoutMS: 5000,

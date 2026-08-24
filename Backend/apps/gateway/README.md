@@ -1,6 +1,6 @@
 # gateway
 
-Single entry point (`:3000`) for the esh-petrol-pump-erp microservices. Handles CORS, security headers, rate limiting, centralized JWT verification, and reverse-proxies requests to each downstream service.
+Single entry point (`:8000`) for the esh-petrol-pump-erp microservices. Handles CORS, security headers, rate limiting, centralized JWT verification, and reverse-proxies requests to each downstream service.
 
 ## Responsibilities
 - **Single entry point** — clients only ever talk to the gateway, never to individual services directly.
@@ -22,14 +22,14 @@ npm run dev
 
 | Gateway path              | Forwarded to        | Auth      |
 |----------------------------|----------------------|-----------|
-| `/api/v1/auth/*`           | auth-service (:3001) | public paths bypass; rest need Bearer |
-| `/api/v1/users/*`          | auth-service (:3001) | Bearer    |
-| `/api/v1/branches/*`       | branch-service (:3002) | Bearer  |
-| `/api/v1/inventory/*`      | inventory-service (:3003) | Bearer |
-| `/api/v1/sales/*`          | sales-service (:3004) | Bearer   |
-| `/api/v1/purchases/*`      | purchase-service (:3005) | Bearer |
-| `/api/v1/analytics/*`      | analytics-service (:3006) | Bearer |
-| `/api/v1/notifications/*`  | notification-service (:3007) | Bearer |
+| `/api/v1/auth/*`           | auth-service (:8001) | public paths bypass; rest need Bearer |
+| `/api/v1/users/*`          | auth-service (:8001) | Bearer    |
+| `/api/v1/branches/*`       | branch-service (:8002) | Bearer  |
+| `/api/v1/inventory/*`      | inventory-service (:8003) | Bearer |
+| `/api/v1/sales/*`          | sales-service (:8004) | Bearer   |
+| `/api/v1/purchases/*`      | purchase-service (:8005) | Bearer |
+| `/api/v1/analytics/*`      | analytics-service (:8006) | Bearer |
+| `/api/v1/notifications/*`  | notification-service (:8007) | Bearer |
 | `/api/v1/health`           | (aggregated check)   | none      |
 | `/ping`                    | gateway itself        | none      |
 
