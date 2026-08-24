@@ -10,3 +10,6 @@ logs/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local Postman testing workspace (never push to GitHub)
+Backend/Postman/
