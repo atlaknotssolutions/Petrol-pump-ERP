@@ -7,7 +7,7 @@ const readEnv = (key, fallback) => {
 
 const config = {
   env: readEnv("NODE_ENV", "development"),
-  port: parseInt(readEnv("PORT", "3000"), 10) || 3000,
+  port: parseInt(readEnv("PORT", "8000"), 10) || 8000,
 
   corsOrigin: (readEnv("CORS_ORIGIN", "*") || "*")
     .split(",")
