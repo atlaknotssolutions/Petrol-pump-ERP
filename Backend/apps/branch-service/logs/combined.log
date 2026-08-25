@@ -1,0 +1,6 @@
+[2026-08-25 13:47:30] info: MongoDB connected: localhost
+[2026-08-25 13:47:30] info: branch-service running in development mode on port 3002
+[2026-08-25 13:48:14] info: SIGINT received. Shutting down gracefully...
+[2026-08-25 13:48:16] error: Failed to connect to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.cluster0.bwtk1j1.mongodb.net
+[2026-08-25 13:49:33] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
+[2026-08-25 13:49:33] info: branch-service running in development mode on port 8002

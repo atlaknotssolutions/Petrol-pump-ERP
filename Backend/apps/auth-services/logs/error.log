@@ -10,3 +10,4 @@
 [2026-08-24 17:16:51] error: Failed to connect to MongoDB at the configured MONGO_URI after 3 attempts: querySrv ECONNREFUSED _mongodb._tcp.cluster0.bwtk1j1.mongodb.net
 [2026-08-24 17:35:55] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8000
 [2026-08-24 17:36:40] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8000
+[2026-08-25 13:45:40] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8001

@@ -18,6 +18,8 @@ const config = {
     accessSecret: readEnv("JWT_ACCESS_SECRET", "dev_access_secret_change_me"),
   },
 
+  gatewaySharedSecret: readEnv("GATEWAY_SHARED_SECRET", ""),
+
   rateLimit: {
     windowMs: parseInt(readEnv("RATE_LIMIT_WINDOW_MS", "60000"), 10) || 60000,
     max: parseInt(readEnv("RATE_LIMIT_MAX", "300"), 10) || 300,

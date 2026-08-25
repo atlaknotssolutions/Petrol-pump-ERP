@@ -27,3 +27,25 @@
 [2026-08-24 17:35:50] info: SIGINT received. Shutting down gracefully...
 [2026-08-24 17:35:55] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
 [2026-08-24 17:36:40] info: MongoDB connected: ac-jsfs7ps-shard-00-00.bwtk1j1.mongodb.net
+[2026-08-24 17:37:08] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
+[2026-08-24 17:37:08] info: auth-service running in development mode on port 8001
+[2026-08-24 17:49:03] warn: MongoDB disconnected
+[2026-08-24 17:57:42] info: SIGINT received. Shutting down gracefully...
+[2026-08-24 17:57:42] warn: MongoDB disconnected
+[2026-08-24 17:57:47] info: MongoDB connected: ac-jsfs7ps-shard-00-01.bwtk1j1.mongodb.net
+[2026-08-24 17:57:47] info: auth-service running in development mode on port 8001
+[2026-08-24 18:16:40] warn: MongoDB disconnected
+[2026-08-24 18:16:56] info: SIGINT received. Shutting down gracefully...
+[2026-08-24 18:16:56] warn: MongoDB disconnected
+[2026-08-24 18:16:59] info: MongoDB connected: ac-jsfs7ps-shard-00-00.bwtk1j1.mongodb.net
+[2026-08-24 18:16:59] info: auth-service running in development mode on port 8001
+[2026-08-25 10:07:01] info: MongoDB connected: ac-jsfs7ps-shard-00-00.bwtk1j1.mongodb.net
+[2026-08-25 10:07:01] info: auth-service running in development mode on port 8001
+[2026-08-25 10:49:55] warn: MongoDB disconnected
+[2026-08-25 11:03:41] warn: MongoDB disconnected
+[2026-08-25 12:04:12] warn: MongoDB disconnected
+[2026-08-25 13:34:51] info: SIGINT received. Shutting down gracefully...
+[2026-08-25 13:34:54] warn: MongoDB disconnected
+[2026-08-25 13:35:41] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
+[2026-08-25 13:35:42] info: auth-service running in development mode on port 8001
+[2026-08-25 13:45:40] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
