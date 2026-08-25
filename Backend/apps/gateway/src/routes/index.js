@@ -39,12 +39,24 @@ router.get('/health', async (_req, res) => {
 });
 
 // Mount each downstream service behind: rate limiting -> auth -> proxy
+//
+// This router is mounted at /api/v1 in app.js, so Express strips that root
+// from req.url before matching layers here. Registry prefixes are stored as
+// full public paths (e.g. '/api/v1/auth'), therefore they must be re-based
+// to be router-relative ('/auth') or the layer can never match and every
+// proxied request falls through to the 404 handler.
+const API_ROOT = '/api/v1';
+
 services.forEach((service) => {
   const limiter = service.prefix === '/api/v1/auth' ? authLimiter : apiLimiter;
   const proxy = buildServiceProxy(service);
 
-  router.use(service.prefix, limiter, gatewayAuth, proxy);
-  logger.info(`Mounted ${service.name} at ${service.prefix} -> ${service.target}`);
+  const mountPath = service.prefix.startsWith(API_ROOT)
+    ? service.prefix.slice(API_ROOT.length) || '/'
+    : service.prefix;
+
+  router.use(mountPath, limiter, gatewayAuth, proxy);
+  logger.info(`Mounted ${service.name} at ${mountPath} (${service.prefix}) -> ${service.target}`);
 });
 
 module.exports = router;

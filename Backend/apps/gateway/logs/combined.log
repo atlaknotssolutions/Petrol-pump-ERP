@@ -54,3 +54,6 @@
 [2026-08-25 10:06:56] info: Mounted analytics-service at /api/v1/analytics -> http://localhost:8006
 [2026-08-25 10:06:56] info: Mounted notification-service at /api/v1/notifications -> http://localhost:8007
 [2026-08-25 10:06:56] info: gateway running in development mode on port 8000
+[2026-08-25 14:19:55] info: ::1 - - [25/Aug/2026:08:49:55 +0000] "GET /ping HTTP/1.1" 200 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 14:19:55] warn: GET /favicon.ico - 404 - Route /favicon.ico not found
+[2026-08-25 14:19:56] info: ::1 - - [25/Aug/2026:08:49:56 +0000] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"

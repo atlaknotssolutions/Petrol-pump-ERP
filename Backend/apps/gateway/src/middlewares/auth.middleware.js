@@ -7,13 +7,14 @@ const { catchAsync } = require('../utils/helpers');
 
 
 const gatewayAuth = catchAsync(async (req, _res, next) => {
-  const matchedService = services.find((svc) => req.path.startsWith(svc.prefix));
+  // Inside a per-service router layer, req.baseUrl is the full public mount
+  // path (e.g. '/api/v1/auth') and req.url is already relative to it
+  // (e.g. '/login'). Exact equality avoids false positives like
+  // '/api/v1/authX' matching '/api/v1/auth'.
+  const matchedService = services.find((svc) => req.baseUrl === svc.prefix);
 
-  if (matchedService) {
-    const relativePath = req.path.slice(matchedService.prefix.length) || '/';
-    if (isPublicPath(relativePath, matchedService.public)) {
-      return next();
-    }
+  if (matchedService && isPublicPath(req.url || '/', matchedService.public)) {
+    return next();
   }
 
   const header = req.headers.authorization;

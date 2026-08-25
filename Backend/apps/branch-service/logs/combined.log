@@ -4,3 +4,13 @@
 [2026-08-25 13:48:16] error: Failed to connect to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.cluster0.bwtk1j1.mongodb.net
 [2026-08-25 13:49:33] info: MongoDB connected: ac-jsfs7ps-shard-00-02.bwtk1j1.mongodb.net
 [2026-08-25 13:49:33] info: branch-service running in development mode on port 8002
+[2026-08-25 14:09:29] warn: MongoDB disconnected
+[2026-08-25 14:17:52] warn: GET /ping - 404 - Route /ping not found
+[2026-08-25 14:17:52] info: ::1 - - [25/Aug/2026:08:47:52 +0000] "GET /ping HTTP/1.1" 404 1629 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 14:17:53] warn: GET /favicon.ico - 404 - Route /favicon.ico not found
+[2026-08-25 14:17:53] info: ::1 - - [25/Aug/2026:08:47:53 +0000] "GET /favicon.ico HTTP/1.1" 404 1643 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 14:17:53] warn: HEAD /llms.txt - 404 - Route /llms.txt not found
+[2026-08-25 14:17:53] info: ::1 - - [25/Aug/2026:08:47:53 +0000] "HEAD /llms.txt HTTP/1.1" 404 1637 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 14:19:19] warn: GET /ping - 404 - Route /ping not found
+[2026-08-25 14:19:19] info: ::1 - - [25/Aug/2026:08:49:19 +0000] "GET /ping HTTP/1.1" 404 1629 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 14:19:39] info: ::1 - - [25/Aug/2026:08:49:39 +0000] "GET /health HTTP/1.1" 200 81 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
