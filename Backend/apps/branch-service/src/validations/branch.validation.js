@@ -64,10 +64,10 @@ const updateStatus = Joi.object({
 const listQuery = Joi.object({
   page: Joi.number().integer().min(1).default(1),
   limit: Joi.number().integer().min(1).max(100).default(20),
-  status: Joi.string().valid('active', 'inactive', 'under_maintenance'),
-  city: Joi.string().trim(),
-  state: Joi.string().trim(),
-  search: Joi.string().trim(), // matches name or code
+  status: Joi.string().valid('active', 'inactive', 'under_maintenance').allow('', null).optional(),
+  city: Joi.string().trim().allow('', null).optional(),
+  state: Joi.string().trim().allow('', null).optional(),
+  search: Joi.string().trim().allow('', null).optional(), // matches name or code
 });
 
 module.exports = {
