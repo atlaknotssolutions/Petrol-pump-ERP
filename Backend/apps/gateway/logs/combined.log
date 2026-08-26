@@ -100,3 +100,14 @@
 [2026-08-26 12:17:23] info: 192.168.1.51 - - [26/Aug/2026:06:47:23 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
 [2026-08-26 12:18:29] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
 [2026-08-26 12:18:29] info: 192.168.1.51 - - [26/Aug/2026:06:48:29 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 12:24:26] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-26 12:24:26] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-26 12:24:26] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-26 12:24:26] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-26 12:24:26] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-26 12:24:26] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-26 12:24:26] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-26 12:24:26] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-26 12:24:26] info: gateway running in development mode on port 8000
+[2026-08-26 12:26:11] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 12:26:11] info: 192.168.1.51 - - [26/Aug/2026:06:56:11 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
