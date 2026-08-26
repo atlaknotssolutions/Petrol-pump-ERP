@@ -5,10 +5,20 @@ const logger = require("./utils/logger");
 
 let server;
 
+// async function start() {
+//   await connectDB();
+
+//   server = app.listen(config.port, () => {
+//     logger.info(
+//       `auth-service running in ${config.env} mode on port ${config.port}`,
+//     );
+//   });
+// }
+
 async function start() {
   await connectDB();
-
-  server = app.listen(config.port, () => {
+ 
+  server = app.listen(config.port, "0.0.0.0", () => {
     logger.info(
       `auth-service running in ${config.env} mode on port ${config.port}`,
     );

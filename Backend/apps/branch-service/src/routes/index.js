@@ -5,7 +5,7 @@ const { trustGateway, authorize, validate } = require('../middlewares');
 
 const router = express.Router();
 
-// All branch routes require an authenticated (gateway-verified) user
+
 router.use(trustGateway);
 
 router.get(

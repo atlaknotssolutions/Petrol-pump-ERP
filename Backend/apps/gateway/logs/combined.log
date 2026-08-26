@@ -57,3 +57,46 @@
 [2026-08-25 14:19:55] info: ::1 - - [25/Aug/2026:08:49:55 +0000] "GET /ping HTTP/1.1" 200 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 [2026-08-25 14:19:55] warn: GET /favicon.ico - 404 - Route /favicon.ico not found
 [2026-08-25 14:19:56] info: ::1 - - [25/Aug/2026:08:49:56 +0000] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 18:15:33] info: SIGINT received. Shutting down gracefully...
+[2026-08-25 18:16:10] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-25 18:16:10] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-25 18:16:10] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-25 18:16:10] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-25 18:16:10] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-25 18:16:10] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-25 18:16:10] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-25 18:16:10] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-25 18:16:10] info: gateway running in development mode on port 8000
+[2026-08-26 10:11:08] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-26 10:11:08] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-26 10:11:08] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-26 10:11:08] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-26 10:11:08] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-26 10:11:08] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-26 10:11:08] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-26 10:11:08] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-26 10:11:08] info: gateway running in development mode on port 8000
+[2026-08-26 10:21:58] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [401]
+[2026-08-26 10:21:58] info: 192.168.1.51 - - [26/Aug/2026:04:51:58 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 381 "-" "okhttp/4.12.0"
+[2026-08-26 10:22:01] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [401]
+[2026-08-26 10:22:01] info: 192.168.1.51 - - [26/Aug/2026:04:52:01 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 381 "-" "okhttp/4.12.0"
+[2026-08-26 10:22:15] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [401]
+[2026-08-26 10:22:15] info: 192.168.1.51 - - [26/Aug/2026:04:52:15 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 381 "-" "okhttp/4.12.0"
+[2026-08-26 10:22:36] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [401]
+[2026-08-26 10:22:36] info: 192.168.1.51 - - [26/Aug/2026:04:52:36 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 381 "-" "okhttp/4.12.0"
+[2026-08-26 10:22:55] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [401]
+[2026-08-26 10:22:55] info: 192.168.1.51 - - [26/Aug/2026:04:52:55 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 381 "-" "okhttp/4.12.0"
+[2026-08-26 10:24:04] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 10:24:04] info: 192.168.1.51 - - [26/Aug/2026:04:54:04 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 10:49:25] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 10:49:25] info: 192.168.1.51 - - [26/Aug/2026:05:19:25 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 11:35:49] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 11:35:49] info: 192.168.1.51 - - [26/Aug/2026:06:05:49 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 11:36:59] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 11:36:59] info: 192.168.1.51 - - [26/Aug/2026:06:06:59 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 11:59:29] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 11:59:29] info: 192.168.1.51 - - [26/Aug/2026:06:29:29 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 12:17:23] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 12:17:23] info: 192.168.1.51 - - [26/Aug/2026:06:47:23 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-26 12:18:29] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-26 12:18:29] info: 192.168.1.51 - - [26/Aug/2026:06:48:29 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"

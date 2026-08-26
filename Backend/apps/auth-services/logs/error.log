@@ -11,3 +11,4 @@
 [2026-08-24 17:35:55] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8000
 [2026-08-24 17:36:40] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8000
 [2026-08-25 13:45:40] error: Uncaught Exception: listen EADDRINUSE: address already in use :::8001
+[2026-08-25 18:16:20] error: Failed to connect to MongoDB at the configured MONGO_URI after 3 attempts: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"

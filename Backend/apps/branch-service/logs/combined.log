@@ -14,3 +14,13 @@
 [2026-08-25 14:19:19] warn: GET /ping - 404 - Route /ping not found
 [2026-08-25 14:19:19] info: ::1 - - [25/Aug/2026:08:49:19 +0000] "GET /ping HTTP/1.1" 404 1629 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 [2026-08-25 14:19:39] info: ::1 - - [25/Aug/2026:08:49:39 +0000] "GET /health HTTP/1.1" 200 81 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-25 15:26:39] warn: MongoDB disconnected
+[2026-08-25 16:13:03] warn: MongoDB disconnected
+[2026-08-25 16:25:52] warn: MongoDB disconnected
+[2026-08-25 18:15:53] info: SIGINT received. Shutting down gracefully...
+[2026-08-25 18:15:53] warn: MongoDB disconnected
+[2026-08-25 18:16:19] info: MongoDB connected: ac-jsfs7ps-shard-00-01.bwtk1j1.mongodb.net
+[2026-08-25 18:16:19] info: branch-service running in development mode on port 8002
+[2026-08-25 18:24:43] warn: MongoDB disconnected
+[2026-08-26 10:04:17] info: MongoDB connected: ac-jsfs7ps-shard-00-01.bwtk1j1.mongodb.net
+[2026-08-26 10:04:17] info: branch-service running in development mode on port 8002

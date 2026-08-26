@@ -1,11 +1,17 @@
-const app = require('./app');
-const config = require('./config');
-const logger = require('./utils/logger');
+const app = require("./app");
+const config = require("./config");
+const logger = require("./utils/logger");
 
 let server;
 
-function start() {
-  server = app.listen(config.port, () => {
+// function start() {
+//   server = app.listen(config.port, () => {
+//     logger.info(`gateway running in ${config.env} mode on port ${config.port}`);
+//   });
+// }
+
+async function start() {
+  server = app.listen(config.port, "0.0.0.0", () => {
     logger.info(`gateway running in ${config.env} mode on port ${config.port}`);
   });
 }
@@ -15,7 +21,7 @@ function shutdown(signal) {
     logger.info(`${signal} received. Shutting down gracefully...`);
     if (server) {
       server.close(() => {
-        logger.info('Server closed. Process terminated.');
+        logger.info("Server closed. Process terminated.");
         process.exit(0);
       });
     } else {
@@ -24,15 +30,15 @@ function shutdown(signal) {
   };
 }
 
-process.on('SIGTERM', shutdown('SIGTERM'));
-process.on('SIGINT', shutdown('SIGINT'));
+process.on("SIGTERM", shutdown("SIGTERM"));
+process.on("SIGINT", shutdown("SIGINT"));
 
-process.on('unhandledRejection', (reason) => {
+process.on("unhandledRejection", (reason) => {
   logger.error(`Unhandled Rejection: ${reason}`);
   throw reason;
 });
 
-process.on('uncaughtException', (err) => {
+process.on("uncaughtException", (err) => {
   logger.error(`Uncaught Exception: ${err.message}`);
   process.exit(1);
 });
