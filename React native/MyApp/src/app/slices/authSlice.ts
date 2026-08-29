@@ -33,7 +33,7 @@ export const loginUser = createAsyncThunk(
   ) => {
     try {
       const response = await fetch(
-        "http://192.168.1.32:8000/api/v1/auth/login",
+        "http://192.168.1.45:8000/api/v1/auth/login",
         {
           method: "POST",
           headers: {
@@ -69,7 +69,7 @@ export const getMe = createAsyncThunk(
     }
 
     try {
-      const response = await fetch("http://192.168.1.32:8000/api/v1/auth/me", {
+      const response = await fetch("http://192.168.1.45:8000/api/v1/auth/me", {
         headers: {
           Accept: "application/json",
           Authorization: `Bearer ${token}`,

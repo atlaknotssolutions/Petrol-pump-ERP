@@ -111,3 +111,54 @@
 [2026-08-26 12:24:26] info: gateway running in development mode on port 8000
 [2026-08-26 12:26:11] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
 [2026-08-26 12:26:11] info: 192.168.1.51 - - [26/Aug/2026:06:56:11 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-27 10:48:30] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-27 10:48:30] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-27 10:48:30] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-27 10:48:30] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-27 10:48:30] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-27 10:48:30] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-27 10:48:30] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-27 10:48:30] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-27 10:48:30] info: gateway running in development mode on port 8000
+[2026-08-27 10:51:18] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-27 10:51:18] info: 192.168.1.17 - - [27/Aug/2026:05:21:18 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-27 13:53:16] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-27 13:53:16] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-27 13:53:16] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-27 13:53:16] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-27 13:53:16] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-27 13:53:16] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-27 13:53:16] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-27 13:53:16] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-27 13:53:16] info: gateway running in development mode on port 8000
+[2026-08-27 13:55:30] info: [proxy:auth-service] [HPM] POST /api/v1/auth/login -> http://localhost:8001/api/v1/auth/login [200]
+[2026-08-27 13:55:30] info: 192.168.1.17 - - [27/Aug/2026:08:25:30 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 999 "-" "okhttp/4.12.0"
+[2026-08-27 14:01:50] warn: GET /api/dashboard - 404 - Route /api/dashboard not found
+[2026-08-27 14:01:50] info: 127.0.0.1 - - [27/Aug/2026:08:31:50 +0000] "GET /api/dashboard HTTP/1.1" 404 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-27 14:01:50] warn: GET /api/dashboard - 404 - Route /api/dashboard not found
+[2026-08-27 14:01:50] info: 127.0.0.1 - - [27/Aug/2026:08:31:50 +0000] "GET /api/dashboard HTTP/1.1" 404 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-27 14:02:01] warn: POST /api/auth/logout - 404 - Route /api/auth/logout not found
+[2026-08-27 14:02:01] info: 127.0.0.1 - - [27/Aug/2026:08:32:01 +0000] "POST /api/auth/logout HTTP/1.1" 404 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-27 14:03:00] warn: POST /api/auth/login - 404 - Route /api/auth/login not found
+[2026-08-27 14:03:00] info: 127.0.0.1 - - [27/Aug/2026:08:33:00 +0000] "POST /api/auth/login HTTP/1.1" 404 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-27 14:03:04] warn: POST /api/auth/login - 404 - Route /api/auth/login not found
+[2026-08-27 14:03:04] info: 127.0.0.1 - - [27/Aug/2026:08:33:04 +0000] "POST /api/auth/login HTTP/1.1" 404 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+[2026-08-27 14:03:10] info: SIGINT received. Shutting down gracefully...
+[2026-08-27 17:44:21] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-27 17:44:21] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-27 17:44:21] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-27 17:44:21] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-27 17:44:21] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-27 17:44:21] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-27 17:44:21] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-27 17:44:21] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-27 17:44:21] info: gateway running in development mode on port 8000
+[2026-08-29 10:20:27] info: Mounted auth-service at /auth (/api/v1/auth) -> http://localhost:8001
+[2026-08-29 10:20:27] info: Mounted auth-service-users at /users (/api/v1/users) -> http://localhost:8001
+[2026-08-29 10:20:27] info: Mounted branch-service at /branches (/api/v1/branches) -> http://localhost:8002
+[2026-08-29 10:20:27] info: Mounted inventory-service at /inventory (/api/v1/inventory) -> http://localhost:8003
+[2026-08-29 10:20:27] info: Mounted sales-service at /sales (/api/v1/sales) -> http://localhost:8004
+[2026-08-29 10:20:27] info: Mounted purchase-service at /purchases (/api/v1/purchases) -> http://localhost:8005
+[2026-08-29 10:20:27] info: Mounted analytics-service at /analytics (/api/v1/analytics) -> http://localhost:8006
+[2026-08-29 10:20:27] info: Mounted notification-service at /notifications (/api/v1/notifications) -> http://localhost:8007
+[2026-08-29 10:20:27] info: gateway running in development mode on port 8000
